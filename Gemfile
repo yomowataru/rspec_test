@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 source "https://rubygems.org"
 
 ruby "3.1.4"
@@ -60,6 +61,13 @@ group :development do
   # gem "spring"
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+
+  gem "rubocop", require: false
+  gem "rubocop-performance", require: false
+  gem "rubocop-rails", require: false
+  gem "rubocop-minitest", require: false
+  gem "rubocop-packaging", require: false
+  gem "rubocop-rspec"
 end
 
 group :test do
@@ -67,5 +75,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 
-  gem 'rspec-rails'
+  gem "rspec-rails"
 end
